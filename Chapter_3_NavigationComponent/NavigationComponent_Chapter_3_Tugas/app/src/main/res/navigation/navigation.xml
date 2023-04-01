@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragLogin">
+    <fragment
+        android:id="@+id/fragLogin"
+        android:name="com.example.navigationcomponent_chapter_3_tugas.FragLogin"
+        android:label="fragment_frag_login"
+        tools:layout="@layout/fragment_frag_login" >
+        <action
+            android:id="@+id/action_fragLogin_to_fragRegister"
+            app:destination="@id/fragRegister" />
+        <action
+            android:id="@+id/action_fragLogin_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragRegister"
+        android:name="com.example.navigationcomponent_chapter_3_tugas.fragRegister"
+        android:label="fragment_frag_register"
+        tools:layout="@layout/fragment_frag_register" >
+        <action
+            android:id="@+id/action_fragRegister_to_fragLogin"
+            app:destination="@id/fragLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.navigationcomponent_chapter_3_tugas.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.navigationcomponent_chapter_3_tugas.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_fragLogin"
+            app:destination="@id/fragLogin" />
+    </fragment>
+</navigation>

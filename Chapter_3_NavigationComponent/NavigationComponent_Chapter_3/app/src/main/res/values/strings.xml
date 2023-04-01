@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NavigationComponent_Chapter_3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ke_halaman_2">ke halaman 2</string>
+    <string name="ke_halaman_3">ke halaman 3</string>
+</resources>
