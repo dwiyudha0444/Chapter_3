@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="25dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".bundle.Profile">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input name"
+        tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/etTahun"
+        android:layout_below="@id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input umur"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_below="@id/etTahun"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/btnSimpan"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
+
+</RelativeLayout>

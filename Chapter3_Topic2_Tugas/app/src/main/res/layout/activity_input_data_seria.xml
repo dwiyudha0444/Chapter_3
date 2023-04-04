@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".Serializable.InputDataSeria">
+
+    <EditText
+        android:id="@+id/inName"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input name"
+        tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/inEmail"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/inName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input email"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/inPhone"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inEmail"
+        android:hint="input phone"
+        tools:ignore="TouchTargetSizeCheck,DuplicateClickableBoundsCheck" />
+
+    <EditText
+        android:id="@+id/inAdrress"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/inPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input address"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/inAge"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/inAdrress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input age"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/seriaButton"
+        android:layout_below="@id/inAge"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Serializable"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
+
+</RelativeLayout>
